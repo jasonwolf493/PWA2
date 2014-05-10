@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html css/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.4422311" vertical-offset="207" max-vertical-offset="960">
+            <state line="36" column="5" selection-start="1102" selection-end="1102" vertical-scroll-proportion="-13.875" vertical-offset="207" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html css/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="6" selection-start="740" selection-end="740" vertical-scroll-proportion="-13.333333" vertical-offset="10" max-vertical-offset="975">
+            <state line="49" column="4" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.6756757" vertical-offset="235" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -88,11 +88,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/html css/index.html" />
-        <option value="$PROJECT_DIR$/html css/contact.html" />
         <option value="$PROJECT_DIR$/html css/browse.html" />
         <option value="$PROJECT_DIR$/html css/about.html" />
         <option value="$PROJECT_DIR$/html css/main.css" />
         <option value="$PROJECT_DIR$/html css/signup.html" />
+        <option value="$PROJECT_DIR$/html css/contact.html" />
       </list>
     </option>
   </component>
@@ -135,6 +135,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="wk 1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wk 1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wk 1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -299,13 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html css/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="740" selection-end="740" vertical-scroll-proportion="-13.333333" vertical-offset="10" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html css/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="9" selection-start="541" selection-end="541" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="960">
@@ -322,7 +325,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html css/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.4422311" vertical-offset="207" max-vertical-offset="960">
+        <state line="36" column="5" selection-start="1102" selection-end="1102" vertical-scroll-proportion="-13.875" vertical-offset="207" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html css/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="4" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.6756757" vertical-offset="235" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
