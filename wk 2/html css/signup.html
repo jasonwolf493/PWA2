@@ -7,7 +7,15 @@
 </style>
     <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 <link href="main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
+
+
+
+
+
+
 
 <body>
 <div class="container">
@@ -34,13 +42,13 @@
       <p>Please enter your information in the fields below, we don't share any of this information.</p>
       <form>
 
-          <p class="agree">Email:</p> <input type="email" name="email">
-          <p class="agree">Password: </p><input type="password" name="password">
-          <p class="agree">Password Confirmation: </p><input type="password" name="password">
+          <p class="agree">Email:</p> <input class="masterTooltip" type="email" name="signinButton" title="Enter Email">
+          <p class="agree">Password: </p><input class="masterTooltip" type="password" name="signinButton" title="Enter Password">
+          <p class="agree">Password Confirmation: </p><input class="masterTooltip" type="password" name="signinButton" title="Confirm Password">
           <p class="agree">By checking this you have agreed to the terms &amp conditions.</p><br>
         <input type="checkbox" class="floatLeft">
 
-          <input type="submit" name="submit button"><br>
+          <input type="button" name="signinButton" id="signinButton" value="Sign In"/><br>
       </form>
 
     </article>

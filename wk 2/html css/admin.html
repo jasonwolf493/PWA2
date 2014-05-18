@@ -7,6 +7,15 @@
 </style>
     <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 <link href="main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+   <!-- <script type="text/javascript">
+        $("document").ready(function(){
+            alert("The page just loaded");
+        })
+
+    </script>  -->
 </head>
 
 <body>
@@ -26,28 +35,55 @@
 
   </nav>
 
+    <h2>Welcome:</h2>
+
     <h2>Start to create your project here.</h2>
     <p class="info">click the project link.</p>
-  <div class="content">
-    <article>
-      <!--   Image of suit on promo goes here-->
-
-        <p>If you would like to start a project you can start one by clicking </p><a href="project.html">here</a>
-    </article>
   </div>
 
-    <h2>Where Are We?</h2>
-    <p class="info">Google maps</p>
 
-  <div class="content">
-    <article>
-       <!--   Image of suit on promo goes here-->
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.927496996687!2d-81.96430939999995!3d41.49268010000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88308fe7dd6ea6ad%3A0xa0beca0fc769b65!2sWalker+Rd!5e1!3m2!1sen!2sus!4v1399685671780" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    <div class="mytabs">
+    <ul class='tabs'>
+        <li><a href='#tab1'>Projects</a></li>
+        <li><a href='#tab2'>Tasks</a></li>
+        <li><a href='#tab3'>Users</a></li>
+    </ul>
+    <div id='tab1'>
+        <p>Here you can add and edit your projects</p>
+        <p>Go to my projects... <button class="projectsbtn">Projects</button></p>
+    </div>
+
+    <div id="tab2">
+        <p>This is where all of your tasks are located</p>
+        <p>Go to my tasks...<button class="taskbtn">Tasks</button></p>
+    </div>
+
+    <div id="tab3">
+        <p>This is where all of the users are located</p>
+        <p>Go to users...<button class="usersbtn">Users</button></p>
+    </div>
 
 
-    </article>
 
-  </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <footer>
     <p>Professional Suits&copy 2014</p>
   </footer>

@@ -7,6 +7,7 @@
 </style>
     <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 <link href="main.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -26,18 +27,71 @@
 
   </nav>
 
-    <h2>Start to create your project here.</h2>
-    <p class="info">click the project link.</p>
+    <button type="button" onclick="">Dashboard</button><button type="button" onclick="">Log Out</button>
+
+    <h2>Welcome:</h2>
+
+
+    <h2>Projects</h2>
+    <p class="info">click Add+ link to create a new project</p>
   <div class="content">
     <article>
       <!--   Image of suit on promo goes here-->
 
-        <p>If you would like to start a project you can start one by clicking </p><a href="project.html">here</a>
+        <p><a href="#" class="modalClick">Add +</a></p>
     </article>
   </div>
 
-    <h2>Where Are We?</h2>
-    <p class="info">Google maps</p>
+
+
+    <div id="overlay">
+        <div id="modal">
+            <span class="close">X</span>
+
+            <h3 class="header">Add Project</h3>
+            <div id="add">
+                <form id="addForm">
+                    <label>Project Name: </label>
+                    <input name="projectName" type="text" id="projectName"/>
+            <br>
+                    <label>Project Description: </label>
+                    <input name="projectDescription" type="text" id="projectDescription"/>
+            <br>
+                    <label>Project Due Date: </label>
+                    <input name="projectDueDate" type="text" id="projectDueDate"/>
+
+
+            <br>
+                    <label for="status">Select Status: </label>
+            <br>
+
+                    <label class="mystatus">
+                        <input name="status" type="radio" id="urgent"><img src="images/btn1.jpg" width="69" height="75">
+                    </label>
+
+                    <label class="mystatus">
+                        <input name="status" type="radio" id="normal"><img src="images/btn2.jpg" width="69" height="75">
+                    </label>
+
+                    <label class="mystatus">
+                        <input name="status" type="radio" id="delayed"><img src="images/btn3.jpg" width="69" height="75">
+                    </label>
+
+                    <label class="mystatus">
+                        <input name="status" type="radio" id="complete"><img src="images/btn4.jpg" width="69" height="75">
+                    </label>
+            <br>
+                    <input name="addButton" type="button" id="addButton" value="Add"/>
+                    </form>
+
+
+
+
+            </div>
+
+
+    </div>
+
 
 
 
@@ -47,5 +101,7 @@
     <p>Professional Suits&copy 2014</p>
   </footer>
 </div>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
