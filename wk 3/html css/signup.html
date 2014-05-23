@@ -41,13 +41,34 @@
       <p>Please enter your information in the fields below, we don't share any of this information.</p>
       <form>
 
-          <p class="agree">Email:</p> <input class="masterTooltip" type="email" name="signinButton" title="Enter Email">
-          <p class="agree">Password: </p><input class="masterTooltip" type="password" name="signinButton" title="Enter Password">
-          <p class="agree">Password Confirmation: </p><input class="masterTooltip" type="password" name="signinButton" title="Confirm Password">
-          <p class="agree">By checking this you have agreed to the terms &amp conditions.</p><br>
-        <input type="checkbox" class="floatLeft">
+          <!--first name-->
+          <label for="first">First Name:</label><br><input id="first" type="text" name="firstName" placeholder="Enter your first name." required><br>
 
-          <input type="button" name="signinButton" id="signinButton" value="Sign In"/><br>
+          <!--last name-->
+          <br><label for="last">Last Name:</label><br><input id="last" type="text" name="lastName" placeholder="Enter your last name." required><br>
+
+          <!--User Name-->
+          <br><label for="userName">User Name:</label><br><input id="userName" type="text" name="userName" placeholder="Enter desired username." required><br>
+
+          <!--email-->
+          <br><label for="email">Email:</label><br><input id="email" type="email" name="email" placeholder="Enter your email." required><br>
+
+          <!--confirm email-->
+          <br><label for="confirm">Confirm Email:</label><br><input id="confirm" type="email" name="confirm" placeholder="Confirm your email address." required><br>
+
+          <!--Password-->
+          <br><label for="password">Password:</label><br><input id="password" type="password" name="password" placeholder="Enter a password here." required><br>
+
+          <!--confirm pass-->
+          <br><label for="pass-confirm">Confirm:</label><br><input id="pass-confirm" type="password" name="pass-confirm" placeholder="Confirm your password." required><br>
+
+          <!--Check box-->
+          <p class="agree">By checking this you have agreed to the <a href="#">terms</a> &amp conditions.</p><br>
+        <input type="checkbox" required>
+
+
+          <!--Submit Button-->
+          <input type="button" id="register" value="Submit"/><br>
       </form>
 
     </article>

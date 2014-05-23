@@ -254,3 +254,8 @@ input[type=radio] + img{
 input[type=radio]:checked + img{
     border: 2px solid #f00;
 }
+label{
+    padding-left: 10px;
+
+
+}

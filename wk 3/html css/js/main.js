@@ -10,7 +10,9 @@
 	===============================================
 	========================= APPLICATION FUNCTIONS	
 	*/
-	
+
+
+
 	
 	var checkLoginState = function(){
 		$.ajax({
@@ -23,8 +25,82 @@
 			}
 		});
 	};
-	
-	
+	// =====================LOGIN===================
+
+    $('#signinButton').click(function(){
+        var user = $('#user').val();
+        var pass = $('#pass').val();
+
+        $.ajax({
+            url: 'xhr/login.php',
+            type:'post',
+            dataType: 'json',
+            data: {
+                username: user,
+                password: pass
+            },
+            success:function(response){
+                console.log("test user");
+                if(response.error){
+                    alert(response.error);
+
+                }else{
+                    window.location.assign('admin.html')
+                };
+            }
+        });
+    });
+
+
+    //===================END LOGIN==================
+
+
+    //===================Log Out====================
+
+    $('#logOut').click(function(e){
+        e.preventDefault();
+        $.get('xhr/logout.php', function(){
+            window.location.assign('index.html')
+        })
+
+    });
+
+    //===============End Log Out====================
+
+    //================Sign Up=======================
+
+    $('#register').on('click', function(){
+        var firstname= $('#first').val(),
+            lastname= $('#last').val(),
+            username= $('#userName').val(),
+            email= $('#email').val(),
+            password= $('#password').val();
+            console.log(firstname+' '+lastname+' '+username+' '+email+' '+password);
+
+        $.ajax({
+            url:'xhr/register.php',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                firstname: firstname,
+                lastname: lastname,
+                username: username,
+                email: email,
+                password: password
+            },
+
+            success: function(response){
+
+                if(response.error){
+                    alert(response.error);
+                }else{
+                    window.location.assign('admin.html');
+                }
+            }
+        });
+    });
+
+    //==============END SIGN UP=====================
 
 	// 	============================================
 	//	SETUP FOR INIT
@@ -80,6 +156,8 @@
             .fadeIn()
             .find('#modal')
             .fadeIn();
+
+
     });
 
     $('.close').on('click', function(event){
@@ -138,7 +216,63 @@
 
     /*------------------END----Accordian-----------------------------*/
 
-		
+    //==================ACCORDIAN BUTTONS===========================//
+
+    $('.projectsbtn').on('click',function(e){
+        e.preventDefault();
+        window.location.assign('project.html');
+    });
+
+    $('.taskbtn').on('click',function(e){
+        e.preventDefault();
+        window.location.assign('task.html');
+    });
+
+    $('.usersbtn').on('click',function(e){
+        e.preventDefault();
+        window.location.assign('users.html');
+    });
+    //================END ACCORDIAN BUTTONS=========================//
+
+
+    //=================NEW PROJECT=========================//
+    $('#addButton').on('click', function(e){
+        e.preventDefault();
+
+        var projName = $('#projectName').val(),
+            projDesc = $('#projectDescription').val(),
+            projDue = $('#projectDueDate').val(),
+            status = $('#projectStatus').val();
+
+        $.ajax({
+
+            url: "xhr/new_project.php",
+            type:"post",
+            dataType:"json",
+            data: {
+                projectName: projName,
+                projectDescription: projDesc,
+                dueDate: projDue,
+                status: status
+
+            },
+            success: function(response){
+
+                console.log('testing for success');
+
+                if(response.error){
+                    alert(response.error);
+                }else{
+                    window.location.assign("project.html");
+                }
+            }
+        });
+
+    });
+
+
+
+    //===============END NEW PROJECT=======================//
 
 	
 })(jQuery); // end private scope
