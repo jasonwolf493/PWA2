@@ -32,21 +32,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="0" selection-start="5658" selection-end="5658" vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="4320">
+            <state line="122" column="42" selection-start="2801" selection-end="2801" vertical-scroll-proportion="-0.5405405" vertical-offset="2250" max-vertical-offset="5265">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1400897267000" expanded="true" signature="7114:7137" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="project.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="87" selection-start="896" selection-end="896" vertical-scroll-proportion="0.043824703" vertical-offset="402" max-vertical-offset="1725">
+            <state line="103" column="32" selection-start="3151" selection-end="3151" vertical-scroll-proportion="-17.625" vertical-offset="1122" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -93,14 +94,14 @@
         <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/signup.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/project.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="55" />
+    <option name="x" value="199" />
+    <option name="y" value="22" />
     <option name="width" value="1672" />
     <option name="height" value="874" />
   </component>
@@ -188,7 +189,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="55" width="1672" height="874" extended-state="0" />
+    <frame x="199" y="22" width="1672" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -255,19 +256,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/project.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="0" selection-start="5658" selection-end="5658" vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="4320">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="103" column="32" selection-start="3151" selection-end="3151" vertical-scroll-proportion="-17.625" vertical-offset="1122" max-vertical-offset="1875">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="87" selection-start="896" selection-end="896" vertical-scroll-proportion="0.043824703" vertical-offset="402" max-vertical-offset="1725">
-          <folding />
+        <state line="122" column="42" selection-start="2801" selection-end="2801" vertical-scroll-proportion="-0.5405405" vertical-offset="2250" max-vertical-offset="5265">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1400897267000" expanded="true" signature="7114:7137" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

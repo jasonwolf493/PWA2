@@ -120,7 +120,7 @@
 	*/
 	/*--------------Tool Tip----------------------*/
     $('.masterTooltip').hover(function(){
-        var title = $(this).attr('title')
+        var title = $(this).attr('title');
         $(this).data('tipText', title).removeAttr('title');
         $('<p class="tooltip"></p>')
             .text(title)
@@ -272,9 +272,72 @@
 
 
 
+
     //===============END NEW PROJECT=======================//
 
-	
+    //====================Get Project====================//
+    var projects = function(){
+
+        $.ajax({
+            url: 'xhr/get_projects.php',
+            type: 'get',
+            dataType: 'json',
+            success: function(response){
+                if(response.error){
+                    console.log(response.error);
+                }else{
+                    for(var i= 0, j=response.projects.length; i < j; i++){
+                        var result = response.projects[i];
+
+                        $(".projects").append(
+                            '<div style="border: 1px solid black">' +
+                                " Project ID: " + result.id + "<br>" +
+                                " Project Name: " + result.projectName + "<br>" +
+                                " Project Description: " + result.projectDescription + "<br>" +
+                                '<button class="deletebtn">Delete</button>' +
+                                '</div> <br>'
+                        );
+                    };
+                    $('.deletebtn').on('click', function(e){
+                       console.log('test delete');
+                        $.ajax({
+                            url: 'xhr/delete_project.php',
+                            data: {
+                                projectID: result.id
+                            },
+                            type:'POST',
+                            dataType:'json',
+                            success: function(response){
+                                console.log('testing for success');
+
+                                if(response.error){
+                                    alert(response.error);
+                                }else{
+                                    window.location.assign("projects.html");
+                                };
+                            }
+                        });
+                    });
+
+
+                }
+            }
+        })
+    };
+
+
+
+    //===================End Get Project===============//
+
+
+
+
+    $('.dashboard').on('click',function(e){
+        e.preventDefault();
+        window.location.assign('admin.html');
+    });
+
+
 })(jQuery); // end private scope
 
 
